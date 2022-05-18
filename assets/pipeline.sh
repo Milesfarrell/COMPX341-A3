@@ -1,3 +1,4 @@
+
 echo "(0) Preparing pipeline by running npm install."
 npm install
 echo "(1) Building/Compiling the application."
@@ -13,9 +14,11 @@ echo "(2) Test number: (Code that is being tested, for example unit  tests go he
 
 echo "(3) Committing to the repo."
 #Git commands go here
-#git add.
-#git comit -m "$1"
-#git push
+git pull
+git add .
+git commit -m “COMPX341-22A-A3 Commiting from CI/CD Pipeline”
+git push
+git status
 
 echo "(4) Deploying the application."
 #Deployed to AWS
