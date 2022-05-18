@@ -14,7 +14,7 @@ else
 	exit
 fi
 #argument for commit message
-commit_message = "COMPX341-22A-A3 Commiting from CI/CD Pipeline"
+#commit_message ="$1" 
 #if [[ -z "${commit_message// }" ]]
 #	then
 #		echo "No commit message supplied!"
@@ -25,7 +25,7 @@ echo "(2) Test number: (Code that is being tested, for example unit  tests go he
 echo "(3) Committing to the repo."
 #Git commands go here
 git add . 
-git commit -m "$commit_message"
+git commit -m "COMPX341-22A-A3 Commiting from CI/CD Pipeline"
 git push
 
 echo "(4) Deploying the application."
