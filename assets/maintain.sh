@@ -6,12 +6,12 @@ files=( $(find . -type f -name "*.ts") )
 for f in "${files[@]}"
 do 
 #TODO: Maybe use &f in echo to show whats being edited?
-   echo "Files are being edited."
-   sed -f '1d' $f
-   sed -f '1i //Full Name: Miles Farrell, ID Number: 1269393' $f
+   echo "File $f is being edited."
+   sed -i '1d' $f
+   sed -i '1i //Full Name: Miles Farrell, ID Number: 1269393' $f
 done
 
 # commit then push the updates to github.
-#git add .
-#git commit -m "Commit using CI/CD to Maintain Files."
-#git push
+git add .
+git commit -m "COMPX341-22A-Maintenance commit message."
+git push

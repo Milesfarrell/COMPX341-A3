@@ -1,4 +1,4 @@
-//
+//Full Name: Miles Farrell, ID Number: 1269393
 export default {
   apiGateway: {
     REGION: "us-east-1",
